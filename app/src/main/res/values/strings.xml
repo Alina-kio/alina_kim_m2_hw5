@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">alina_kim_m2_hw5</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="Password">Password</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Google">Sign in with Google</string>
+    <string name="Facebook">Sign in with Facebook</string>
+    <string name="Sign_up">Sign up</string>
+    <string name="Log_in">Log in</string>
+    <string name="OR">OR</string>
 </resources>
