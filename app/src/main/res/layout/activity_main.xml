@@ -9,6 +9,8 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -20,6 +22,9 @@
 
 
     <EditText
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:autofillHints="emailAddress"
         android:inputType="textEmailAddress"
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -31,7 +36,6 @@
         android:backgroundTint="@color/lightred"
         android:hint="@string/Email_Address"
         android:padding="20dp"
-        android:textColorHint="@color/gray"
         android:textSize="16sp" />
 
 
@@ -45,15 +49,17 @@
         android:backgroundTint="@color/lightred">
 
         <EditText
-            android:inputType="numberPassword"
             android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_marginEnd="60dp"
+            android:autofillHints="password"
+            android:background="@drawable/edit_text"
             android:backgroundTint="@color/lightred"
             android:hint="@string/Password"
+            android:inputType="numberPassword"
             android:padding="20dp"
-            android:background="@drawable/edit_text"
+            android:textColor="@color/black"
             android:textColorHint="@color/gray"
             android:textSize="16sp" />
 
@@ -68,6 +74,8 @@
 
 
     <EditText
+        android:textColor="@color/black"
+        android:autofillHints="password"
         android:inputType="numberPassword"
         android:id="@+id/condirm_password"
         android:layout_width="match_parent"
@@ -84,18 +92,15 @@
 
     <Button
         android:textStyle="bold"
-        android:paddingHorizontal="135dp"
-        android:paddingVertical="17dp"
         android:id="@+id/log_in"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="45dp"
-        android:background="@drawable/edit_text"
-        android:backgroundTint="@color/red"
-        android:hint="@string/Log_in"
-        android:textColorHint="@color/white"
+        android:background="@drawable/login"
+        android:text="Log in"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textAllCaps="false"/>
 
@@ -119,18 +124,18 @@
         android:background="@drawable/edit_text">
 
         <ImageView
-            android:layout_width="30dp"
+            android:layout_width="25dp"
             android:layout_height="match_parent"
             android:src="@drawable/img"
-            android:layout_marginStart="50dp"/>
+            android:layout_marginStart="20dp"/>
 
-        <EditText
+        <TextView
+            android:layout_marginStart="30dp"
             android:padding="20dp"
-            android:src="@drawable/img"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/white"
-            android:hint="@string/Google"
+            android:text="@string/Google"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -148,12 +153,14 @@
 
 
         <ImageView
-            android:layout_width="30dp"
+            android:layout_width="25dp"
             android:layout_height="match_parent"
             android:src="@drawable/img_2"
-            android:layout_marginStart="50dp"/>
+            android:layout_marginStart="20dp"/>
 
-        <EditText
+        <TextView
+            android:layout_marginStart="30dp"
+            android:clickable="true"
             android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
